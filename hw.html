@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <body onload="sh()">
+    <p style="font-size: 20px;">using querySelectorAll</p>
+<p class="a">hello</p>
+<p class="a">hello</p>
+<p class="a">hello</p>
+<p class="a">hello</p>
+<button onclick="show()">click</button>
+<input type="text" id="name" onchange="change()">
+
+    <script>
+        
+//querySelectorAll//////////////////
+// var text=document.querySelectorAll(".a")
+var text=document.getElementsByTagName("p")
+text[1].style.color="white"
+// // for(var i=0; i<=text.length;++i){
+// //   text[2].innerHTML="<h4>changeText</h4>";
+// //   text[i].style.fontSize= "40px"
+// //   text[i].style.backgroundColor ="red"
+//   alert(text[2].innerHTML)//ميصير لوحدا الاندكس لازم ويى خاصية
+// // }
+// // var button = document.querySelector("#myButton")
+// // button.addEventListener("click",  () => {
+// //     var body = document.querySelector("body")
+// //     body.style.backgroundColor = "red"
+// // })
+// //we can use traditional function////////////
+// // button.addEventListener("click",  function () {
+// // var body1 = document.querySelector("body")
+// // body1.style.backgroundColor = "red"
+// // })
+
+// // document.getElementById("myButton").addEventListener("click", function () {
+// //     document.body.style.backgroundColor="red"
+// // })
+
+// // function myFunction() {
+// //     document.body.style.backgroundColor = "red"
+// // }
+
+
+//////hw
+var button = document.querySelector("#myButton")
+button.addEventListener("click", vv)
+function vv() {
+   
+    var p1 = document.createElement("P")
+    p1.innerText="Read more below";
+
+document.body.appendChild(p1)
+} 
+
+
+///////////HWWWWWWWW//////////////////
+var button = document.querySelector("#myButton")
+button.addEventListener("click", vv)
+function vv() {
+   
+//     var p1 = document.createElement("P")
+//     p1.innerText="Read more below";
+
+// document.body.appendChild(p1)
+
+//orrrr//////////
+document.getElementById("demo").innerHTML="Read more below"
+} 
+
+
+
+
+    
+
+</script>
+</body>
+</html>

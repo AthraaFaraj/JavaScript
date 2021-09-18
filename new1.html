@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>click the button to make the bg color red</p>
+    <!-- <div id="myDIV">hi</div> -->
+    <button onclick="myFun()">try it5</button>
+    <!-- <ul id="myList">
+        <li>Coffee</li>
+        <li>Tea</li>
+      </ul>
+      
+      <p>Click the button to append an item to the end of the list.</p>
+      
+      <button onclick="myFunction()">Try it111</button> -->
+
+
+<!-- //new1/////////// -->
+      <ul id="myList1"><li>Coffee</li><li>Tea</li></ul>
+<ul id="myList2"><li>Water</li><li>Milk</li></ul>
+
+<p>Click the button to move an item from one list to another.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+
+
+//new1////////////
+function myFunction() {
+  var node = document.getElementById("myList2").lastChild;
+  document.getElementById("myList1").appendChild(node);
+}
+
+
+/////new2222///////////
+function myFun() {
+    // var d=querySelector("div")
+var e= document.createElement("p")
+var f=document.createTextNode("hellllllllllll")
+e.appendChild(f)
+document.querySelector("div").appendChild(e)
+document.getElementById("myDIV").appendChild(e);
+}
+
+function myFun() {
+    var d= document.querySelector("body")
+    d.style.backgroundColor="red"
+}
+
+let div = document.createElement("div")
+div.innerHTML="<p>click the button </p>"
+document.body.appendChild(div)
+div.id="aaDiv"
+div.className="classDiv"
+
+
+let h2=document.createElement("h2")
+h2.textContent="add h2"
+div.appendChild(h2)
+    </script>
+</body>
+</html>

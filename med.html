@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* exapmle frpm soslolearn */
+        /* :root {
+  background: #c9c1c1;
+} */
+div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: burlywood;
+    width: 39px;
+}
+        .com{
+            display: flex;
+            align-items: stretch;
+        }
+        .com div{
+            background-color: khaki;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+            flex: 1;
+        }
+        body{
+            font-size: 20px;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+        /* end */
+nav a{
+    text-decoration: none;
+    width: 20%;
+    display: inline-block;
+    padding: .5rem;
+    background-color: brown;
+    color: black;
+    margin: .5rem;
+    text-align: center;
+}
+.parent1, .parent2{width: 100%; height: 15rem; border: brown solid 6px; margin: 1rem 0rem;}
+.child1, .child2, .child3, .child4, .child5, .child6 {width: 4rem; height: 4rem;}
+.child1{background-color: chocolate;  }
+.child2{background-color: rgb(108, 30, 210);}
+.child3{background-color: rgb(210, 30, 135);}
+.child4{background-color: rgb(182, 152, 169);}
+.child5{background-color: rgb(26, 19, 23);}
+.child6{background-color: rgb(161, 128, 20);}
+
+.parent1{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap;
+    align-content: space-around; */
+    /* flex-wrap: wrap;
+    align-content: flex-end; */
+    /* flex-flow: row wrap; */
+    /* justify-content: flex-start;
+    align-items: center; */
+}
+.child1{
+    align-self: flex-end;
+}
+.parent2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.dd{
+    color: transparent;
+    background: url(55.jpg);
+    /* -webkit-background-clip: text; */
+    background-size: 100% 50px;
+}
+
+
+@media  screen and (orientation:portrait) {
+    body{
+        background: linear-gradient(45deg, rgb(97, 110, 168) 20%, rgb(16, 5, 112) 80%) ;
+       
+    }
+    nav{
+        display: block;
+        text-align: center;
+        background-color: cadetblue;
+    }
+    .parent1, .parent2{width: 100%; height: 15rem; border: rgb(48, 167, 214) solid 6px; margin: 1rem 0rem;}
+    .child1, .child2, .child3, .child4, .child5, .child6 {width: 2rem; height: 4rem;}
+
+    nav a{
+        display: block;
+        width: 100%;
+        padding: 1rem 0rem;
+        margin: 2rem 0rem;
+    }
+    #link4{
+        display: block;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 id="tit">javascript</h1>
+    <h1 id="tit">javascript2</h1>
+    <!-- <h1 onclick="arr()" id="dd">HHHHHHHHHH</h1> -->
+    <!-- <nav>
+        <h1 class="dd">Hiii</h1>
+        <img src="logo-img.png" alt="" height="40px" width="40px">
+        <a href="">link1</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+        <a href="" id="link4">link4</a>
+    </nav> -->
+    <label for="weather">Select the weather type today: </label>
+<select id="weather">
+  <option value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+    <div class="parent1">
+        <!-- <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div>
+        <div class="child1">child1</div>
+        <div class="child2">child2</div>
+        <div class="child3">child3</div> -->
+
+    </div>
+    <!-- <div class="parent2">
+        <div class="child4">child4</div>
+        <div class="child5">child5</div>
+        <div class="child6">child6</div>
+
+    </div> -->
+    
+<!-- example sololearn//////////////////////////////////////// -->
+    <!-- <div class="com">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <p>hhhhhhhh</p> -->
+    <div>rfehfngjn</div>
+    <!-- sololearn/////////////////////////////////////// -->
+    <script src="lect.js"></script>
+    <!-- <script src="athr.js"></script> -->
+</body>
+</html>
