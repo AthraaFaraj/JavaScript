@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="test">
+        <p>some text</p>
+        </div> -->
+    <!-- <body onload="sh()"> -->
+    <!-- <h1 id="h1ID" style="color: red;">World</h1> -->
+    <!-- <header class="hhh">text</header>
+    <header class="hhh">text</header> -->
+    <!-- <p>This example uses the addEventListener() method to add many events on the document.</p> -->
+
+    <!-- <p id="demo"></p> -->
+<!-- <p class="a b c" id="as" title="ddf" data-text="this is a text" >hello</p>
+<p class="a">hello</p>
+<p class="a">hello</p>
+<p class="a">hello</p> -->
+<!-- <button onclick="show()">click</button> -->
+<!-- <input type="text" id="name" onchange="change()"> -->
+
+<!-- <div id ="demo">
+            <p id="p1">some text</p>
+            <p>some other text</p>
+        </div> -->
+<!-- <button id="myButton" >Add some text</button> -->
+<!-- <button onclick="myFunction()">add lenght</button> -->
+<!-- <p id="demo"></p> -->
+<!-- <div id="div1">div section</div> -->
+
+<!-- <h2 id="asa">athraa</h2> -->
+<!-- <button id="u4">alert me</button> -->
+<!-- <div id="div1">1monsster</div>
+<div id="div2">1monsster2</div> -->
+<!-- <button onclick="changeBackground('red');">Red</button> -->
+
+
+<p id='txt' onclick='test();'>20</p>
+<!-- //////////////////////////////////////////////////////////// -->
+    <script> 
+//     var m=document.querySelector("#u4")
+
+// m.addEventListener("click", vv)
+// function vv() {
+//     var t=document.querySelector("body")
+//     t.style.backgroundColor="red"
+    
+// }
+
+// document.addEventListener("click", function(){
+//   document.body.style.backgroundColor = "red";
+// });
+
+// function changeBackground(bgColor) {
+//     document.body.style.background = bgColor;
+//   }
+
+
+
+// var c = document.querySelector(".a")
+// c.style.backgroundColor="red"
+// var m=document.querySelector("#u4")
+
+// m.addEventListener("click", vv)
+// function vv() {
+//     alert("hi, I am athraa")
+    
+// }
+// var pc = document.createElement("p")
+// c.appendChild(pc)
+// pc.innerText="magic";
+
+
+
+
+// //code//////////////////////////
+// var h = document.querySelector(".hhh")
+// h.innerHTML = "<h1>hiiiiiiiiii header</h1>";
+
+
+//querySelectorAll//////////////////
+// var text=document.querySelectorAll(".a")
+// text[1].style.color="white"
+// for(var i=0; i<=text.length;++i){
+//   text[2].innerHTML="<h4>changeText</h4>";
+//   text[i].style.fontSize= "40px"
+//   text[i].style.backgroundColor ="red"
+// }
+
+// var p = document.querySelectorAll("p.a") //نذكر اسم الالمنت مع اسم الكلاس او الاي دي اذا جان اسم الكلاس نفس اسم كلاس نفس اسم كلاس المنت لخ
+// var b=document.addEventListener("click", ()=> {
+
+//     p[1].style.backgroundColor="pink"
+// })
+// p[1].style.backgroundColor="pink"
+
+
+// var t=document.querySelector("#asa")
+// t.addEventListener("click", ()=> alert("jj"))
+// // function xx() {
+// //     alert("dd")
+// // }
+
+// var z=document.querySelector("#asa")
+// z.addEventListener("click", () => {alert("helo world")});
+
+// var s=document.getElementById("#u4")
+// s.onclick = function () {
+//     'use strick';
+//     document.getElementById('monster').style.display='none'
+// }
+
+
+// var x =document.querySelector("body")
+// x.style.background="red"
+
+// var c = document.getElementsByTagName("p")
+// c[1].style.backgroundColor="red"
+
+// var c = document.querySelectorAll("p.a")
+// c[2].style.backgroundColor="red"
+
+
+// document.getElementsByTagName("p")[0].innerHTML="hhh"
+
+// document.addEventListener("mouseover", myFunction);
+// document.addEventListener("click", mySecondFunction);
+// // document.addEventListener("mouseout", myThirdFunction);
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML += "Moused over!<br>"
+// }
+
+// function mySecondFunction() {
+//   document.getElementById("demo").innerHTML += "Clicked!<br>"
+// }
+
+// function myThirdFunction() {
+//   document.getElementById("demo").innerHTML += "Moused out!<br>"
+// }
+
+
+
+// var p1 = 5;
+// var p2 = 7;
+
+// document.addEventListener("click", function() {
+//   myFunction(p1, p2);
+// });
+
+// function myFunction(a, b) {
+//   var result = a * b;
+//   document.getElementById("demo").innerHTML = result;
+// }
+
+
+// document.addEventListener("click", function(){
+//   document.body.style.backgroundColor = "red";
+// });
+
+
+
+// document.addEventListener("mousemove", myFunction);
+
+// function myFunction() {
+// //   document.getElementById("demo").innerHTML = Math.random();
+// var x = document.querySelectorAll(".a");
+// //   document.getElementById("demo").innerHTML = x.length;
+// ////orrrrrr///////اما نخلق P المنت او نعمل بي المنت بماف البدي html 
+// //create p here or u empty p in body html
+// var d=document.createElement("p")
+// document.body.appendChild(d)
+// d.innerHTML=x.length
+// d.style.border="10px solid red"
+// }
+
+
+////////منوع///////////////////////
+// var d= document.querySelectorAll("div > p") //في حالة نحدد كل البي مال كل دف
+// var d= document.querySelectorAll("div, h2, p") //غي حال نريد نغير شي ع المنتز سوى
+// var d= document.querySelectorAll(".div, .h2, .p")//نذكرر اسم كلاساتهم او اي دي
+// let links = document.querySelector('p a');//كل ال اي داحل ال بي
+// let listItems = document.querySelectorAll('ul > li');//كل ال ال اي داحل يو ال child
+// let visitedLinks = document.querySelectorAll('a:visited');//a:visited matches all <a> elements that have been visited:
+
+
+
+// function removeHandler() {
+//   document.removeEventListener("mousemove", myFunction);
+// }
+// var body = document.querySelector("body")
+
+
+///////////HWWWWWWWW//////////////////
+// var button = document.querySelector("#myButton")
+// button.addEventListener("click", vv)
+// function vv() {
+   
+// //     var p1 = document.createElement("P")
+// //     p1.innerText="Read more below";
+
+// // document.body.appendChild(p1)
+
+// //orrrr//////////
+// document.getElementById("demo").innerHTML="Read more below"
+// } 
+
+// function myFunction(){
+    
+//     var btn=document.createElement("button")
+// btn.innerHTML="click on it"
+// document.body.appendChild(btn)
+// btn.style.width="60px 70px"
+// btn.style.background="green"
+
+// var p = document.createElement("p")
+// p.innerHTML="text"
+// document.body.appendChild(p)
+// document.getElementById("div1").appendChild(p)//يقرا الدغ اول شي لان بال بدي ه مباشر ورا البتم
+
+// var x = document.getElementById("h1ID").style.color;//نسوي اللون يقرا من الجافا
+//   document.getElementById("demo").innerHTML = x;
+
+//   var x = document.createElement("STYLE");
+//   var t = document.createTextNode("body {font: 20px verdana;}");
+//   x.appendChild(t);
+//   document.head.appendChild(x);
+
+// document.getElementById("h1ID").style.color = "#00fafa";
+
+// }
+
+
+// let body = document.body
+// body.appendChild("hello")//ميصير نستخدم ابندجايلد فقط للالمنت مال html
+// body.append("hello", "hi")
+// var d =document.createElement('div')
+// d.innerText="new"
+// d.textContent="new1"
+// body.appendChild(d)//ثنينهم يشتغلون الابند والابند جايلد
+// d.innerText="<strong>new23</strong>"
+// d.textContent="<strong>new23</strong>"
+// d.innerHTML="<strong>new23</strong>"//هنا ياخذ التاك مال html
+// body.appendChild(d)
+// //or we can use 
+// var s=document.createElement("strong")//نفس النتائج
+// s.innerHTML="new4"
+// body.appendChild(s)
+
+// var f=document.querySelector("#as")
+
+// console.log(f.getAttribute("id"));
+// console.log(f.getAttribute("title"));
+// console.log(f.title);
+// console.log(f.id);
+// console.log(f.id="new777");
+// console.log(f.getAttribute("id", "newid"));//title the same way
+// console.log(f.removeAttribute("id"));
+// console.log(f.dataset);
+// f.dataset.newName="gfhfg"
+// f.classList.add("d")
+// f.classList.remove("d")
+// f.classList.toggle("c")//لان موجود الكلاس حذفه
+// f.classList.toggle("g")//لان ماموجود الكلاس ضافة
+// f.classList.toggle("j",true)//t add f remove
+
+///////////style///////////////////////33333ways
+// document.querySelector("h1").style.color="blue"
+// document.querySelector("h1").style.fontSize="40px"
+// document.querySelector("h1").style.cssText="color: red; font-size:30px"//هنا نستخدم خواص مثل كتابة ال سي اس اس العادي لكن ممكن يكون ممحمل باخطاءالcss
+// document.querySelector("h1").setAttribute("style", "color: green; font-size:20px")
+   
+// document.querySelector("#id").appendChild(p)//نفس السطر
+
+// var a = document.getElementById("demo");
+//      var arr = a.childNodes;
+//      for(var x=0;x<arr.length;x++) {
+//        arr[x].innerHTML = "new text";
+//      }
+//      setTimeout(setText, 500);
+
+//اذا نريد نغير عناصر كلها من نفس التاك نغير صفات بيها لازم نستخدم لوب
+// var d=document.getElementsByTagName("p")
+// for (let i = 0; i < d.length; i++) {
+//     d[i].style.color="red"
+//     d[i].innerHTML="new twxr"
+// }
+// function myFunction() {
+     //creating a new paragraph
+    //  var p = document.createElement("p");
+    // var node = document.createTextNode("Some new text");
+    // //adding the text to the paragraph
+    // p.appendChild(node);
+
+    // var div = document.getElementById("demo");
+    // //adding the paragraph to the div
+    // div.appendChild(p);
+
+
+//click on button to rempve it
+    // var parent = document.getElementById("demo");
+    // var child = document.getElementById("p1");
+    // parent.removeChild(child);
+
+//replace
+//     var p = document.createElement("p");
+//     var node = document.createTextNode("This is new");
+//     p.appendChild(node);
+
+//     var parent = document.getElementById("demo");
+//     var child = document.getElementById("p1");
+//     parent.replaceChild(p, child);
+
+// };
+
+
+// var x = document.getElementById('demo');//demo is id of button
+//     // x.onclick = function () {  //onclick يصير هنا او بفايل ال html
+//     //     document.body.innerHTML = Date();
+    // }
+
+    // function show() { //show is onclick button
+    //     alert("hi")
+    // }
+
+//     function change() {  //change is onclick input
+//     var x = document.getElementById('name');
+//     x.value = x.value.toUpperCase();
+// }
+
+// function sh() {  //sh is onload body
+//     alert("hhhhh")
+// }   
+
+// var btn = document.getElementById("demo"); //button
+//     btn.addEventListener("click", myFunction);
+
+//     function myFunction() {
+//         alert(Math.random());
+//         btn.removeEventListener("click", myFunction);//يلغي بعد ما ينفذ
+//     }
+
+
+// function test() {
+//   var x=document.getElementById('txt');
+//   var n = x.innerHTML;
+//   console.log(n);//من اكله .innerHTMLمحتوى الالمنت راح يطلع 
+//   x.innerHTML = n/2; //مثل اللوب كل مرة ياخذها ينفذ عليها يرجع يخليها بالp
+// }
+
+
+
+// var el=document.getElementById("test");
+// alert(el.hasChildNodes());
+
+   </script>
+
+</body>
+</html>
